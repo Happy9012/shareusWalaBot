@@ -15,7 +15,7 @@ class Config(object):
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     ABOUT_BOT_TEXT = """<b>This is Mdisk Search Bot.
 
-🤖 My Name: <a href='https://t.me/iPopcornMovieBot'>i Popcorn Movie Bot</a>
+🤖 My Name: <a href='https://t.me/BunnyMoviebot'>Bunny Movie Bot</a>
 
 📝 Language : <a href='https://www.python.org'> Python V3</a>
 
@@ -23,10 +23,10 @@ class Config(object):
 
 📡 Server: <a href='https://heroku.com'>Heroku</a>
 
-👨‍💻 Created By: <a href='https://t.me/RoyalKrrishna'>@RoyalKrrishna</a></b>
+👨‍💻 Created By: <a href='https://t.me/Himanshurathore0'>@Himanshurathore0</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/RoyalKrrishna'>@RoyalKrrishna</a>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/Himanshurathore0'>@Himanshurathore0</a>
 
 If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
 """
@@ -34,22 +34,21 @@ If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
     HOME_TEXT = """
 <b>Hey! {}😅,
 
-i Popcorn Movie Bot Here.🤖</a>
+Bunny Movie Bot Here.🤖</a>
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @RoyalKrrishna</a></b>
+<a>Made With ❤ By @Himanshurathore0</a></b>
 """
 
 
     START_MSG = """
 <b>Hey! {}😅,
-
-i Popcorn Movie Bot Here.🤖</a>
+Bunny Movie Bot Here.🤖</a>
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @RoyalKrrishna</a></b>
+<a>Made With ❤ By @Himanshurathore0</a></b>
 """
 
 
