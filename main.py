@@ -57,9 +57,7 @@ async def inline_handlers(_, event: Message):
                             InlineKeyboardButton("Click To Check Release Date 📅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie%20Release%20Date')
                         ]
                     ]
-                )
-                )
-    async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
+                async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             thumb = None
             f_text = message.text
