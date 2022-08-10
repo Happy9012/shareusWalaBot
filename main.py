@@ -48,18 +48,8 @@ async def help_handler(_, event: Message):
 async def inline_handlers(_, event: Message):
     if event.text == '/start':
         return
-    answers = reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("Click To Check Spelling ✅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie')
-                        ],
-                        [
-                            InlineKeyboardButton("Click To Check Release Date 📅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie%20Release%20Date')
-                        ]
-                    ),
-                    parse_mode="html
-               )
-                async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
+    answers = f'**📂 Results For ➠ {event.text} \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n➠ Type Only Movie Name With Correct Spelling.✍️\n➠ Add Year For Better Result.🗓️\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
+    async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             thumb = None
             f_text = message.text
